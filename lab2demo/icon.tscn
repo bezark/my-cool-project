@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://dli5w4npijdq1"]
+[gd_scene load_steps=3 format=3 uid="uid://dli5w4npijdq1"]
 
 [ext_resource type="Texture2D" uid="uid://d1wmsrmt0s6wa" path="res://icon.svg" id="1_b4oc8"]
+[ext_resource type="PackedScene" uid="uid://bo75edmmkppmq" path="res://john.tscn" id="2_5g6b6"]
 
 [node name="Icon" type="Sprite2D"]
 modulate = Color(0.117647, 1, 1, 1)
 position = Vector2(575, 250)
 texture = ExtResource("1_b4oc8")
+
+[node name="John" parent="." instance=ExtResource("2_5g6b6")]
+position = Vector2(-454, -115)
